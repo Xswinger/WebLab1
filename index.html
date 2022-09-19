@@ -44,6 +44,9 @@
             background-color: #ccc;
             height: 500px;
         }
+        #note{
+            font-size: 12px;
+        }
         .validation_message{
             text-align: center;
         }
@@ -159,7 +162,8 @@
                 </div>
                 <div class="input_values">
                     <label for="y_value">Введите Y:</label> <br>
-                    <input type="text" name="y_coordinate" class="y" id="y_value" placeholder="(-5...3), до 2 символов после запятой" autocomplete="off">
+                    <input style="margin-bottom: 10px" type="text" name="y_coordinate" class="y" id="y_value" placeholder="(-5...3)*" autocomplete="off"><br>
+                    <span id="note">*Происходит округление значений до 2 знаков после запятой</span>
                 </div>
                 <div class="input_values">Введите R:<br>
                     <input type="checkbox" name="r_coordinate" onchange="changeActiveCheckboxR(id)" class="r" id="r_value_1" value="1">1
